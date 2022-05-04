@@ -5,11 +5,8 @@
 [![build passing](https://img.shields.io/static/v1?label=build&message=passing&color=green)](https://github.com/Go-Autonomous/mime-parser)
 
 This project is a fork of the awesome [yolov5](https://github.com/ultralytics/yolov5) from Glenn Jocher which is implemented in PyTorch, with added files from [ByteTrack](https://github.com/ifzhang/ByteTrack) (in the object-tracker folder). I have used this for counting eggs in a video for easter; 
-![eggs](https://raw.githubusercontent.com/Hojland/yolov5-eggs/master/assets/eggs-prior.gif)
 
-The result being 
-![eggs](https://raw.githubusercontent.com/Hojland/yolov5-eggs/master/assets/eggs-annotated.gif)
-
+<p align="center"><img src="https://raw.githubusercontent.com/Hojland/yolov5-eggs/master/assets/eggs-prior.gif" width="500"/></p>
 
 ### Yolov5 
 
@@ -48,16 +45,25 @@ Then I added the object tracking folder from Bytetrack, which was chosen because
 > 
 > *[arXiv 2110.06864](https://arxiv.org/abs/2110.06864)*
 
+
+The result being 
+
+<p align="center"><img src="https://raw.githubusercontent.com/Hojland/yolov5-eggs/master/assets/eggs-annotated.gif" width="500"/></p>
+
+
 ## How To
 First, do 
+
 1. Do annotations in label-studio and export to yolo format
-``` bash
+
+```bash
 Make labelstudio
 ```
 2. Create relevant files for yolov5 as specified in the train custom model tutorial
 3. Train the model as specified in the tutorial
 4. Do detection on your on video by running
-``` python
+
+```python
 python3 detect.py --source <YOUR_VIDEO> --data <YOUR_DATA_SPEC> --weights <YOUR_BEST_TRAINED_WEIGHTS>
 ```
 
